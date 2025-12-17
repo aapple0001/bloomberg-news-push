@@ -97,7 +97,7 @@ def make_email_content(all_news):
 
     # 邮件标题部分
     email_title_html = f"""
-    <p><strong><span style='color:{title_color};'>⏰｜「彭博速递」</span></strong></p>
+    <p><strong><span style='color:{title_color};'>📩「彭博速递」</span></strong></p>
     """
 
     # 资讯列表部分
@@ -148,7 +148,7 @@ def send_email(html_content):
             msg["From"] = f"{CUSTOM_NICKNAME} <{GMAIL_EMAIL}>"
             msg["To"] = receiver
             # 邮件标题带北京时间
-            msg["Subject"] = f"📩「彭博速递」（{bj_date}）"
+            msg["Subject"] = f"⏰｜{bj_date}"
             smtp.sendmail(GMAIL_EMAIL, [receiver], msg.as_string())
             print(f"✅ 已发送给：{receiver}")
 
