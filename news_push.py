@@ -11,7 +11,7 @@ GMAIL_EMAIL = os.getenv("GMAIL_EMAIL")
 GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 RECEIVER_EMAILS = os.getenv("RECEIVER_EMAILS")
 SMTP_SERVER = "smtp.gmail.com"
-CUSTOM_NICKNAME = "♥️彭博快讯"
+CUSTOM_NICKNAME = "📩彭博快讯"
 
 # ---------------------- 基础配置 ----------------------
 RSS_URL = "https://bloombergnew.buzzing.cc/feed.xml"  # 彭博资讯源
@@ -97,7 +97,7 @@ def make_email_content(all_news):
 
     # 邮件标题部分
     email_title_html = f"""
-    <p><strong><span style='color:{title_color};'>📩「彭博速递」</span></strong></p>
+    <p><strong><span style='color:{title_color};'>♥️「彭博速递」</span></strong></p>
     """
 
     # 资讯列表部分
