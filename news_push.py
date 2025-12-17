@@ -11,7 +11,7 @@ GMAIL_EMAIL = os.getenv("GMAIL_EMAIL")
 GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 RECEIVER_EMAILS = os.getenv("RECEIVER_EMAILS")
 SMTP_SERVER = "smtp.gmail.com"
-CUSTOM_NICKNAME = "♥️彭博速递"
+CUSTOM_NICKNAME = "♥️彭博快讯"
 
 # ---------------------- 基础配置 ----------------------
 RSS_URL = "https://bloombergnew.buzzing.cc/feed.xml"  # 彭博资讯源
